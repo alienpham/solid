@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./test/bootstrap.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         verbose="true"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         strict="true"
+         mapTestClassNameToCoveredClassName="false"
+         forceCoversAnnotation="false"
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60">
+
+    <testsuite name="BestPractices">
+        <directory>test/BestPractices/Test</directory>
+    </testsuite>
+
+    <logging>
+        <log type="coverage-html" target="./coverage" charset="UTF-8"
+             highlight="true"/>
+    </logging>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/BestPractices</directory>
+        </whitelist>
+    </filter>
+</phpunit>

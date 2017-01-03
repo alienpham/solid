@@ -1,0 +1,24 @@
+{
+    "name": "longpham/best-practices",
+    "description": "Learning php best practices: Design Principles and Design Patterns",
+    "type": "library",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Jackie Pham",
+            "email": "longpt0310@gmail.com"
+        }
+    ],
+    "require": {
+      "php": ">=5.5.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "BestPractices\\": "src/",
+        "BestPractices\\Test\\" : "test/BestPractices/Test"
+      }
+    },
+    "require-dev": {
+      "phpunit/phpunit": "3.7.*"
+  }
+}

@@ -1,2 +1,4 @@
 # common
 .idea
+composer.phar
+/vendor/
